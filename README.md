@@ -1,2 +1,3 @@
-# pyrxi-net
-main website
+# pyrxi.net
+
+Our system's personal site
