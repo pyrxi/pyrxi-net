@@ -1,3 +1,8 @@
+  .flex-title {
+    display: flex;
+    flex-wrap: no-wrap;
+    justify-content: center;
+  }
   .flex-nav {
     display: flex;
     flex-flow: row wrap;
@@ -5,3 +10,9 @@
     align-content: center;
     align-items: baseline;
   }
+
+.flex-container {
+  display: flex;
+  flex-flow: column-reverse;
+  justify-content: center;
+}
