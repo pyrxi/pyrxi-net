@@ -1,0 +1,31 @@
+body {
+  background-color: #272822 	;
+  color: #3f3;
+}
+
+.grid-container {
+  color: #acada1;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 6em auto 10px;
+  gap: 2em 2em;
+  font-size:20px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #76715e;
+}
+
+.nav a {
+  color: #55bcce;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4em;
+  color: #d4c96e;
+}
