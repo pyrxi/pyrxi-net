@@ -83,6 +83,14 @@ footer {
   grid-column-end: span 3;
 }
 
+#enhancedbutton {
+  display: inline;
+  border-width: 4px;
+  border-style: solid double double solid;
+  padding :2px;
+  text-decoration: none;
+}
+
 @font-face {
   font-family: "ibm-plex-extralight";
   src: url("../fonts/ofl/IBM_Plex/IBMPlexSansCondensed-ExtraLight.woff2");
