@@ -1,24 +1,30 @@
+:root {
+  --text-color: #3d3;
+  --bg-color: #000800;
+}
+
+* {
+  font-family: 'ibm-plex-light', sans-serif;
+  font-size: 1.2rem;
+  color: var(--text-color);
+}
+
 body {
-  background-color: #000200;
-  color: #3F3;
-  font-family: VT323;
-  font-size: 1.4em;
+  background-color: var(--bg-color);
 }
 
 hr {
-  border: 1px solid #3f3;
-
+  border: 1px dashed;
 }
 
 a {
-  color: #3F3;
-  text-decoration: underline dotted;
-  text-decoration-thickness: 1px;
+  color: var(--link-color);
+  text-decoration: none;
 }
 
 footer {
+  font-family: 'ibm-plex-extralight', sans-serif;
   text-align: center;
-  color: #3F3;
 }
 
 .flex-title {
@@ -27,7 +33,12 @@ footer {
   justify-content: center;
 }
 
-.flex-nav ol{
+.flex-title h1 a {
+  font-family: 'ibm-plex-regular', sans-serif;
+  font-size: 2.4rem;
+}
+
+.flex-nav ol {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
@@ -38,6 +49,10 @@ footer {
   list-style: none;
 }
 
+.flex-nav ol li a {
+  font-size: 1.4rem;
+}
+
 .flex-container {
   display: flex;
   flex-flow: column-reverse;
@@ -46,11 +61,26 @@ footer {
   margin-right: 8%;
 }
 
-.flex-container h2{
+.flex-container h2 {
   text-align: center;
 }
 
 @font-face {
-  font-family: "VT323";
-  src: url("../fonts/ofl/VT323/VT323-Regular.ttf");
+  font-family: "ibm-plex-extralight";
+  src: url("../fonts/ofl/IBM_Plex/IBMPlexSansCondensed-ExtraLight.woff2");
+}
+
+@font-face {
+  font-family: "ibm-plex-light";
+  src: url("../fonts/ofl/IBM_Plex/IBMPlexSansCondensed-Light.woff2");
+}
+
+@font-face {
+  font-family: "ibm-plex-medium";
+  src: url("../fonts/ofl/IBM_Plex/IBMPlexSansCondensed-Medium.woff2");
+}
+
+@font-face {
+  font-family: "ibm-plex-regular";
+  src: url("../fonts/ofl/IBM_Plex/IBMPlexSansCondensed-Regular.woff2");
 }
