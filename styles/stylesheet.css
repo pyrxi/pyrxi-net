@@ -1,5 +1,6 @@
 :root {
-  --text-color: #3d3;
+  --text-color: #3b3;
+  --hover-color: #33b;
   --bg-color: #000800;
 }
 
@@ -7,19 +8,26 @@
   font-family: 'ibm-plex-light', sans-serif;
   font-size: 1.2rem;
   color: var(--text-color);
+  text-decoration-line: none;
+}
+
+article a {
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 1px;
+  text-underline-position: under;
 }
 
 body {
   background-color: var(--bg-color);
 }
 
-hr {
-  border: 1px dashed;
+a:hover{
+  color: var(--hover-color);
 }
 
-a {
-  color: var(--link-color);
-  text-decoration: none;
+hr {
+  border: 1px dashed;
 }
 
 footer {
@@ -27,42 +35,52 @@ footer {
   text-align: center;
 }
 
-.flex-title {
-  display: flex;
-  flex-wrap: no-wrap;
-  justify-content: center;
+.grid {
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
 }
 
-.flex-title h1 a {
+#title-grid {
+  grid-column-start: 1;
+  grid-column-end: span 3;
+}
+
+#title {
+  text-align: center;
+  font-family: 'ibm-plex-regular', sans-serif;
+}
+
+#title a {
   font-family: 'ibm-plex-regular', sans-serif;
   font-size: 2.4rem;
 }
 
-.flex-nav ol {
+#navbar-grid {
+  grid-column-start: 1;
+  grid-column-end: span 3;
+}
+
+#navbar {
   display: flex;
-  flex-flow: row wrap;
+  flex-wrap: wrap;
   justify-content: space-evenly;
-  align-content: center;
-  align-items: baseline;
-  margin-left: 6%;
-  margin-right: 6%;
-  list-style: none;
+  margin: 1.5rem auto;
 }
 
-.flex-nav ol li a {
+#navbar li {
+  display: inline-block;
+}
+
+#navbar li a {
   font-size: 1.4rem;
+  border-width: 4px;
+  border-style: solid double double solid;
+  padding: 0.2rem;
 }
 
-.flex-container {
-  display: flex;
-  flex-flow: column-reverse;
-  justify-content: left;
-  margin-left: 8%;
-  margin-right: 8%;
-}
-
-.flex-container h2 {
-  text-align: center;
+#footer-grid {
+  grid-column-start: 1;
+  grid-column-end: span 3;
 }
 
 @font-face {
