@@ -85,11 +85,15 @@ footer {
 }
 
 #enhancedbutton {
-  display: inline;
+  display: inline-flex;
   border-width: 4px;
   border-style: solid double double solid;
   padding :2px;
   text-decoration: none;
+}
+
+#enhancedbutton:hover{
+  color: var(--hover-color);
 }
 
 @font-face {
