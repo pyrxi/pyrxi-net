@@ -11,6 +11,10 @@
   text-decoration-line: none;
 }
 
+a:hover{
+  color: var(--hover-color);
+}
+
 article a {
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -22,9 +26,10 @@ body {
   background-color: var(--bg-color);
 }
 
-a:hover{
-  color: var(--hover-color);
+ul {
+  list-style-type: square;
 }
+
 
 hr {
   border: 1px dashed;
